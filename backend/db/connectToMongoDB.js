@@ -10,4 +10,4 @@ const connectToMongoDB = async () => {
     }
 }
 
-export default connectToMongoDB;
+export default connectToMongoDB; // filename changed because of deployment issue
