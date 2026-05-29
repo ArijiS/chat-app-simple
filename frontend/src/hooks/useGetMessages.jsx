@@ -6,14 +6,14 @@ import { useEffect } from 'react';
 const useGetMessages = () => {
     const [loading, setLoading] = useState(false);
     const { messages, setMessages, selectedConversation } = useConversation();
-    const apiBase = "http://localhost:5000/api";
+    //const apiBase = "http://localhost:5000/api";
 
     useEffect(()=>{
 
         const getMessages = async () => {
             setLoading(true);
             try{
-                const res = await fetch(`${apiBase}/messages/${selectedConversation._id}`, {
+                const res = await fetch(`/api/messages/${selectedConversation._id}`, {
                     credentials: "include",
                 });
                 const data = await res.json();

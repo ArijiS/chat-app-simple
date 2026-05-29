@@ -4,13 +4,13 @@ import toast from 'react-hot-toast';
 const useGetConversations = () => {
     const [loading, setLoading] = useState(false);
     const [conversations, setConversations] = useState([]);
-    const apiBase = "http://localhost:5000/api";
+    //const apiBase = "http://localhost:5000/api";
 
     useEffect(()=>{
         const getConversations = async () => {
             setLoading(true);
             try{
-                const res = await fetch(`${apiBase}/users`, {
+                const res = await fetch(`/api/users`, {
                     credentials: "include",
                 });
                 const data = await res.json();

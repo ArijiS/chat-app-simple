@@ -5,12 +5,12 @@ import toast from "react-hot-toast";
 const useSendMessage = () => {
     const [ loading, setLoading ] = useState(false);
     const { messages, setMessages, selectedConversation } = useConversation();
-    const apiBase = "http://localhost:5000/api";
+    //const apiBase = "http://localhost:5000/api";
 
     const sendMessage = async (message) => {
         setLoading(true);
         try{
-            const res = await fetch(`${apiBase}/messages/send/${selectedConversation._id}`, {
+            const res = await fetch(`/api/messages/send/${selectedConversation._id}`, {
                 method: "POST",
                 credentials: "include",
                 headers: {

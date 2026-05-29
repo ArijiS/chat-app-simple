@@ -4,7 +4,7 @@ import { useAuthContext } from '../contexts/AuthContext';
 
 const useLogin = () => {
     const { setAuthUser } = useAuthContext();
-    const apiBase = "http://localhost:5000/api/auth";
+    //const apiBase = "http://localhost:5000/api/auth";
     const [loading, setLoading] = useState(false);
     const login = async (username, password) => {
         const success = handleLoginInputErrors (username, password);
@@ -13,7 +13,7 @@ const useLogin = () => {
         }
         setLoading(true);
         try{
-            const res = await fetch(`${apiBase}/login`, {
+            const res = await fetch(`/api/auth/login`, {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 credentials: "include",
