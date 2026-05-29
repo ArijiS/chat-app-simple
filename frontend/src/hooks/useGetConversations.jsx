@@ -3,8 +3,7 @@ import toast from 'react-hot-toast';
 
 const useGetConversations = () => {
     const [loading, setLoading] = useState(false);
-    const [conversations, setConversations] = useState([]);
-    //const apiBase = "http://localhost:5000/api";
+    const [conversations, setConversations] = useState([]);    
 
     useEffect(()=>{
         const getConversations = async () => {
