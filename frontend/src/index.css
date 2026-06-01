@@ -2,13 +2,13 @@
 @plugin "daisyui/index.js";
 
 .message-enter {
-    animation: messageEnter 0.5s ease-in-out;
+    animation: messageEnter 0.1s ease-in-out;
 }
 
 @keyframes messageEnter {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     to{
         opacity: 1;
