@@ -16,7 +16,7 @@ const Login = () => {
 
   return (
     <div className="flex flex-col items-center justify-center mx-auto min-w-96">
-        <div className="w-full p-6 rounded-lg shadow-md bg-base-300">
+        <div className="w-full p-6 rounded-lg shadow-md bg-[#18181b]">
             <h1 className="text-3xl font-semibold text-center text-base-content">Login</h1>
 
         <form className="flex flex-col gap-y-5" onSubmit={handleLogin}>
@@ -44,7 +44,7 @@ const Login = () => {
           </Link>
 
           <div>
-            <button className="btn w-full btn-sm mt-4 h-10 bg-accent-content"
+            <button className="btn w-full btn-sm mt-4 h-10 bg-[#002c22] hover:bg-[#68edba] hover:text-gray-900"
             disabled={loading}
             >{loading? <span className="loading loading-spinner"></span> : "Login"}</button>
           </div>
