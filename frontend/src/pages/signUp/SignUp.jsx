@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useState } from "react";
 import useSignup from '../../hooks/useSignup';
+import { RiAccountPinBoxFill } from "react-icons/ri";
 
 const SignUp = () => {
   const { loading, signup } = useSignup();
@@ -20,11 +21,17 @@ const SignUp = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center mx-auto min-w-96">
-      <div className="w-full p-6 rounded-lg shadow-md bg-[#18181b]">
+    <div className="mx-auto min-w-96">
+      <div className="flex flex-col items-center justify-center w-full p-6 rounded-lg shadow-md bg-[#18181b]">
+
+        <div className="flex items-center justify-center bg-accent-content px-4 py-2 rounded-md mb-8 gap-x-2">
+          <RiAccountPinBoxFill className="size-12 text-accent"/>
+          <p className="text-2xl">The Chat App</p>
+        </div>
+
         <h1 className="text-3xl font-semibold text-center text-base-content">Sign-up</h1>
       
-      <form className="flex flex-col gap-y-5" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-y-3 w-full" onSubmit={handleSubmit}>
         <div>
             <label className="label p-2">
               <span className="label-text text-base">Full Name</span>

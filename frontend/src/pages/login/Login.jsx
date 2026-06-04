@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import useLogin from '../../hooks/useLogin';
+import { RiAccountPinBoxFill } from "react-icons/ri";
 
 const Login = () => {
 
@@ -15,11 +16,18 @@ const Login = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center mx-auto min-w-96">
-        <div className="w-full p-6 rounded-lg shadow-md bg-[#18181b]">
+    <div className="mx-auto min-w-96">
+
+        <div className="flex flex-col items-center justify-center w-full p-6 rounded-lg shadow-md bg-[#18181b]">
+
+            <div className="flex items-center justify-center bg-accent-content px-4 py-2 rounded-md mb-10">
+                <RiAccountPinBoxFill className="size-15 text-accent"/>
+                <p className="text-2xl">The Chat App</p>
+            </div>
+
             <h1 className="text-3xl font-semibold text-center text-base-content">Login</h1>
 
-        <form className="flex flex-col gap-y-5" onSubmit={handleLogin}>
+        <form className="flex flex-col gap-y-5 w-full" onSubmit={handleLogin}>
 
           <div>
             <label className="label p-2">

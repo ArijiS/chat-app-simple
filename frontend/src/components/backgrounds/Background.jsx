@@ -3,13 +3,23 @@
 export default function Background( { children } ) {
 
   return (
-    <div className="relative flex flex-col h-screen bg-linear-to-t from-emerald-950/80 to-teal-950">
-      <div className="absolute inset-0 flex items-center justify-center">
+    <div className="relative w-full flex flex-col h-screen bg-linear-to-t from-emerald-950/80 to-teal-950">
+      <div className="absolute inset-0 overflow-hidden w-full h-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="400 50 1000 560"
-          className=""
-        >
+          className="
+          h-full
+          absolute
+          left-1/2
+          top-1/2
+          -translate-x-1/2
+          -translate-y-1/2
+          max-xl:w-400
+          max-lg:w-330
+          max-sm:w-360
+          xl:w-full
+          ">
           <g opacity="0.1">
             <path
               stroke="url(#paint0_linear_757_2083)"

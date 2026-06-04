@@ -2,18 +2,23 @@ import React from 'react';
 import Messages from './Messages';
 import MessageInput from './MessageInput';
 import { TbMessages } from "react-icons/tb";
+import { IoArrowBack } from "react-icons/io5";
 import useConversation from "../../zustand/useConversation";
 import { useAuthContext } from '../../contexts/AuthContext';
 
 const MessageContainer = () => {
-  const { selectedConversation, setselectedConversation } = useConversation();
+  const { selectedConversation, setSelectedConversation } = useConversation();
   return (
 
-    <div className="md:min-w-120 lg:w-full flex flex-col">
+    <div className="w-full flex flex-col">
         {!selectedConversation ? <NoMessageSelected /> : (
           <>
-            <div className="bg-accent-content text-base-content px-4 py-2 mb-4 w-full">
-              <span className="text-neutral-content font-light">To: </span>
+            <div className="flex items-center gap-x-5 bg-accent-content text-base-content px-4 py-2 mb-4 w-full">
+              <button className="btn btn-circle hover:bg-[#68edba] hover:text-gray-900"
+                onClick={ ()=> setSelectedConversation( null ) }
+              >
+                <IoArrowBack className="text-xl"/>
+              </button>
               <span className="font-bold">{selectedConversation.fullName}</span>
             </div>
 

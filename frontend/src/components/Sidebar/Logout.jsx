@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiLogoutCircleLine } from "react-icons/ri";
+
 import { RiLogoutBoxLine } from "react-icons/ri";
 import useLogout from '../../hooks/useLogout';
 import useConversation from "../../zustand/useConversation";
@@ -17,7 +17,7 @@ const Logout = () => {
                 setSelectedConversation(null);
             }}>                
                 <RiLogoutBoxLine className="text-lg"/>
-                <p className="text-sm font-light">Logout</p>
+                <p className="text-sm font-medium">Logout</p>
             </button>}            
         </div>  
   )
