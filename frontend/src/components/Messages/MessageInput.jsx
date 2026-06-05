@@ -35,7 +35,7 @@ const MessageInput = () => {
   );
 
   return (
-    <form className="relative px-4 mt-3 mb-0 flex items-center gap-x-2" onSubmit={handleSubmit}>
+    <form className="relative px-0 md:px-4 mt-3 mb-0 flex items-center gap-x-2" onSubmit={handleSubmit}>
         
         <div className="w-full bg-base-100 flex items-center justify-between px-3 py-1.5 rounded-full">
           <div>
