@@ -10,7 +10,7 @@ const MessageContainer = () => {
   const { selectedConversation, setSelectedConversation } = useConversation();
   return (
 
-    <div className={`w-full flex h-dvh flex-col ${ selectedConversation ? 'max-sm:flex' : 'max-sm:hidden' }`}>
+    <div className={`w-full flex h-full flex-col ${ selectedConversation ? 'max-sm:flex' : 'max-sm:hidden' }`}>
         {!selectedConversation ? <NoMessageSelected /> : (
           <>
             <div className="flex items-center gap-x-5 bg-accent-content text-base-content px-4 py-2 mb-4 w-full">

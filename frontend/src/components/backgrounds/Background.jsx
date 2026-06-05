@@ -3,7 +3,7 @@
 export default function Background( { children } ) {
 
   return (
-    <div className="relative w-full flex flex-col h-screen bg-linear-to-t from-emerald-950/80 to-teal-950">
+    <div className="relative w-full flex flex-col h-dvh bg-linear-to-t from-emerald-950/80 to-teal-950">
       <div className="absolute inset-0 overflow-hidden w-full h-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
