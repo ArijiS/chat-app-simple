@@ -46,7 +46,7 @@ const MessageInput = () => {
 
             {showEmojiPicker && (
               <div className="absolute bottom-full mb-2 left-4 message-enter" ref={ emojiPickerRef }>
-                <EmojiPicker open={showEmojiPicker} onEmojiClick={( emojiData )=> { setMessage( prev=> prev + emojiData.emoji ) }}/>
+                <EmojiPicker open={showEmojiPicker} autoFocusSearch={false} onEmojiClick={( emojiData )=> { setMessage( prev=> prev + emojiData.emoji ) }}/>
               </div>
             )}
           </div>                  

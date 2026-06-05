@@ -31,7 +31,7 @@ const SignUp = () => {
 
         <h1 className="text-3xl font-semibold text-center text-base-content">Sign-up</h1>
       
-      <form className="flex flex-col gap-y-3 w-full" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-y-2 w-full" onSubmit={handleSubmit}>
         <div>
             <label className="label p-2">
               <span className="label-text text-base">Full Name</span>
