@@ -15,7 +15,7 @@ function App() {
 
   return (
       <Background>
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center h-dvh">
           <Routes>
             <Route path="/landingPage" element={ <LandingPage /> } />
             <Route path="/" element={ authUser ? <Home /> : <Navigate to="/landingPage"/>}/>
